@@ -1,6 +1,6 @@
 # `lama-mode`
 
-Major mode for Lama ( the programming language for educational purposes, see https://github.com/JetBrains-Research/Lama )
+Major mode for Emacs for Lama ( the programming language for educational purposes, see https://github.com/JetBrains-Research/Lama )
 
 ## `Usage`
 
@@ -17,6 +17,5 @@ There are 2 variants:
 (use-package nav-nav
   :after (rx)
   :quelpa (lama-mode :fetcher git :url "https://github.com/evjava/lama-mode.git")
-  :config 
-  (add-to-list 'auto-mode-alist '("\\.lama\\'" . lama-mode)))
+  :mode ("\\.lama\\'" . lama-mode))
 ```
